@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina de Recados</title>
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/pageRecados.css" />
+  </head>
+  <body>
+      <header class="row w-100">
+              <input type="text" id="inDescricao" class="col-3" placeholder="Descrição">
+              <input type="text" id="inDetalhamento" class="col-6" placeholder="Detalhamento">
+              <button type="button" id="btnSalvar" onclick="" class="btn btn-primary col-1 ">Salvar</button>
+      </header>
+    <table class="table table-striped" id="tbRecados">
+        <thead>
+          <tr>
+            <th scope="col">Descrição</th>
+            <th scope="col">detalhamento</th>
+            <th scope="col">ação</th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        </tbody>
+      </table>
+      <div class="modal fade" id="modalNewNote" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+           <div class="modal-content">
+              <div class="modal-header">
+                 <h5 id="modalNewNoteTitle" class="modal-title"></h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div id="modalNewNoteBody" class="modal-body"></div>
+              <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+              </div>
+           </div>
+        </div>
+     </div>
+     <!-- modal deletar nota -->
+     <div class="modal fade" id="modalDeleteNote" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+           <div class="modal-content">
+              <div class="modal-header">
+                 <h5 id="modalNewNoteTitle" class="modal-title">Deletar Nota</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div id="modalNewNoteBody" class="modal-body">Você está prestes a deletar sua nota e não poderá recupera-la. Tem certeza?</div>
+              <div class="modal-footer">
+                 <button id="deleteButtonModal" type="button" class="btn btn-danger" data-bs-dismiss="modal">Confirmar</button>
+                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              </div>
+           </div>
+        </div>
+     </div>
+    <!-- modal editar nota -->
+     <div class="modal fade" id="modalEditNote" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+           <div class="modal-content">
+              <div class="modal-header">
+                 <h5 id="modalEditTitle" class="modal-title">Editar Nota</h5>
+                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div id="modalEditNoteBody" class="modal-body">Digite sua edição abaixo:</div>
+              <div class="d-flex">
+                 <div class="form-floating mx-1">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Descrição" />
+                    <label for="floatingInput" class="lead opacity-50">Descrição</label>
+                 </div>
+                 <div class="form-floating mx-1 w-100">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Detalhamento" />
+                    <label for="floatingInput" class="lead opacity-50">Detalhamento</label>
+                 </div>
+              </div>
+              <div class="modal-footer">
+                 <button id="editButtonModal" type="button" class="btn btn-success" data-bs-dismiss="modal">Confirmar</button>
+                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              </div>
+           </div>
+        </div>
+     </div>
+    
+<script src="../javascript/login.js"></script>
+<script src="../javascript/bootstrap.bundle.js"></script>
+  </body>
+</html>

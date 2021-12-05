@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height:100vh;
+}
+#container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+
+#imagem-container{
+    background-image: url("plano_de_fundo.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+#login{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    margin: 0;
+    background: rgb(230,72,29);
+background: linear-gradient(90deg, rgba(230,72,29,1) 36%, rgba(214,202,19,1) 100%);
+max-width: 600px;
+
+}
+#titulo{
+    font-size: 20px;
+    text-transform:  capitalize;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 143, 99);
+    border-radius: 10px;
+    opacity: 0.9;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2px;
+}
+#dados{
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    opacity: 0.8;
+   
+}
+#dados div input{
+    font-weight: bold;
+    background: gainsboro;
+}

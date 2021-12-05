@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+#container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+#criaConta{
+    flex-direction: column;
+    display: flex;
+    min-width: 300px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background: rgb(230,72,29);
+    background: linear-gradient(90deg, rgba(230,72,29,1) 36%, rgba(214,202,19,1) 100%);
+    max-width: 600px;
+    
+}
+
+#imagem-container{
+    background-image: url("plano_de_fundo.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+#titulo{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: rgb(255, 143, 99);
+    border-radius: 10px;
+    opacity: 0.9;
+    max-width: 400px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#form p{
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    text-indent: 1rem;
+}
+#dados div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-left: 4px;
+}
+#dados div input{
+    font-weight: bold;
+    background: gainsboro;
+}
